@@ -34,21 +34,40 @@
     License: https://bootstrapmade.com/license/
   ======================================================= -->
 </head>
-<!-- GetButton.io widget -->
-<script type="text/javascript">
-  (function () {
-      var options = {
-          whatsapp: "+6285606033213", // WhatsApp number
-          call_to_action: "Hallo kak :)", // Call to action
-          position: "left", // Position may be 'right' or 'left'
-      };
-      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-  })();
-</script>
-<!-- /GetButton.io widget -->
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="112922180509948"
+  theme_color="#ff5ca1"
+  logged_in_greeting="Hallo Apa kabar, ada yang bisa kami bantu?"
+  logged_out_greeting="Hallo Apa kabar, ada yang bisa kami bantu?">
+      </div>
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="112922180509948"
+  theme_color="#ff5ca1"
+  logged_in_greeting="Hallo Apa kabar, ada yang bisa kami bantu?"
+  logged_out_greeting="Hallo Apa kabar, ada yang bisa kami bantu?">
+      </div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -83,7 +102,7 @@
           <li><a href="aplikasi.html">Jasa Aplikasi PWA</a></li>
           <li><a href="designuiux.html">Design UI/UX</a></li>
           </li>
-          <li><a href="#footer">Aplikasi Kami</a></li>
+          <li><a href="#wa.me/+628560633213">Whatsapp Kami</a></li>
         </ul>
       </nav><!-- .main-nav -->
       
@@ -124,7 +143,7 @@
 
           <div class="col-lg-5 col-md-6">
             <div class="about-img">
-              <img src="about-img.jpg" alt="">
+              <img src="img/about-img.jpg" alt="">
             </div>
           </div>
 
@@ -350,12 +369,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/w3.JPG" class="img-fluid" alt="">
+              <img src="img/portfolio/w3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4><a href="#">Design UI/UX</a></h4>
                 <p>Sketsa app</p>
                 <div>
-                  <a href="img/portfolio/w3.JPG" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="img/portfolio/w3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
               </div>
@@ -379,12 +398,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/w2.JPG" class="img-fluid" alt="">
+              <img src="img/portfolio/w2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4><a href="https://b-lesmart.github.io/14/designuiux.html">Design UI/UX</a></h4>
                 <p>Proses pengerjaan</p>
                 <div>
-                  <a href="img/portfolio/w2.JPG" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="img/portfolio/w2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="https://b-lesmart.github.io/14/designuiux.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
               </div>
@@ -394,12 +413,12 @@
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/card1.JPG" class="img-fluid" alt="">
+              <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4><a href="#">Content Marketing</a></h4>
                 <p>Content Marketing</p>
                 <div>
-                  <a href="img/portfolio/card1.JPG" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
               </div>
@@ -423,12 +442,12 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/w1.JPG" class="img-fluid" alt="">
+              <img src="img/portfolio/w1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4><a href="#">Design UI/UX</a></h4>
                 <p>Design UI/UX</p>
                 <div>
-                  <a href="img/portfolio/w1.JPG" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="img/portfolio/w1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
                   <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
                 </div>
               </div>
@@ -438,11 +457,8 @@
         </div>
 
       </div>
-    </section><!-- #portfolio -->
-
-    <!--==========================
-      Frequently Asked Questions Section
-    ============================-->
+    </section>
+    
   <!--==========================
     Footer
   ============================-->
